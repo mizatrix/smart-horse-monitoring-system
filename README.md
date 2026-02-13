@@ -1,4 +1,3 @@
-
 # EquiGuard - Smart Horse Health Monitoring System
 
 ![EquiGuard Banner](assets/images/image14.png)
@@ -32,7 +31,7 @@
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/your-username/smart-horse-monitoring-system.git
+    git clone https://github.com/mizatrix/smart-horse-monitoring-system.git
     ```
 
 2. **Install Dependencies**:
@@ -47,11 +46,5 @@
     flutter run
     ```
 
-## 👥 Team
-
-- **Dr. Moataz Samy** (Supervisor)
-- **Nouran Ahmed** (AI & Mobile Lead)
-- **Malak Mohamed** (IoT & AI Model Lead)
-
 ---
-*Built for the 2026 Graduation Project Showcase.*
+*EquiGuard - The Future of Equine Intelligence*
