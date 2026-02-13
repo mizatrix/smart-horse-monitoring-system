@@ -1,50 +1,68 @@
-# EquiGuard - Smart Horse Health Monitoring System
+# EquiGuard: Intelligent Horse Health & Management
 
-![EquiGuard Banner](assets/images/equiguard_banner.png)
+EquiGuard is a premium, AI-powered mobile application designed for modern horse stable management. It combines advanced health monitoring with tailored features for the Egyptian environment, ensuring your horses are safe, healthy, and performing at their peak.
 
-**EquiGuard** is a next-generation equine health monitoring system powered by IoT and Artificial Intelligence. This app allows stable owners and veterinarians to monitor the real-time health, location, and activity of their horses, ensuring early detection of critical conditions like Colic.
+## 🌟 Key Features
 
-## 🚀 Key Features
+### 🐴 Horse Health & Monitoring
 
-- **Real-time Vitals**: Monitor Heart Rate, Temperature, and Respiration 24/7.
-- **🔮 AI Health Prediction**: Proprietary algorithms analyze data to predict health risks before they become critical.
-- **🦄 AR Health Scan**: Augmented Reality feature to visualize horse stats in real-time using the camera.
-- **📍 Live Geofencing**: Track horse location and get alerts if they leave safe zones.
-- **📊 24h History**: Detailed interactive charts for deep health analysis.
+- **AI-Driven Health Alerts**: Real-time analysis of vitals to predict colic, laminitis, and other risks.
+- **Vitals Tracking**: Monitor Heart Rate, Temperature, and Respiratory Rate with historical charts.
+- **Visual Status Indicators**: Instant "Healthy", "Warning", or "Critical" status badges for every horse.
+- **AR Health Scan**: Augmented Reality scanner to visualize horse anatomy and potential injury zones overlaid on the camera feed.
 
-## 🛠️ Technology Stack
+### 🏥 Stable Management Best Practices
+
+- **Feeding Schedules**: Track diet plans, feed types (Hay, Grains), and feeding times.
+- **Hygiene & Maintenance**: Logs for stall mucking and general cleaning.
+- **Professional Visits**: Schedule and track Farrier and Vet visits.
+- **Inventory Management**: (Mock) Track feed and supplement levels.
+
+### 🇪🇬 Egypt-Specific Environmental Protection
+
+- **Heat Stress Index**: specialized algorithm calculating risk based on local temperature and humidity.
+- **Hydration Tracking**: Monitoring water intake to prevent dehydration in arid climates.
+- **Sand Colic Prevention**: Alerts and reminders for Psyllium treatments and sand clearance management.
+- **Local Disease Alerts**: Notifications for regional outbreaks (e.g., AHS).
+
+### 🎨 Premium User Experience
+
+- **Luxury Aesthetic**: "Deep Teal" and "Metallic Gold" color palette for a professional, high-end feel.
+- **Intuitive Dashboard**: Glassmorphism effects and clean cards for quick access to key data.
+- **Immersive Profiles**: Beautiful, full-screen horse avatars with slide-up detail cards.
+- **Smooth Navigation**: Custom bottom navigation with animated tab switching.
+
+## 📱 Screens Overview
+
+1. **Dashboard**: The command center. Quick stats, AI alerts, and a scrollable list of all horses in the stable.
+2. **Horse Profile**: Detailed view of a specific horse, including age, breed, and a 24-hour vitals history chart.
+3. **Stable Operations**: specialized tab for managing daily tasks like feeding and cleaning.
+4. **AR Scanner**: Interactive camera view for health assessments.
+
+## 🛠 Tech Stack
 
 - **Framework**: Flutter (Dart)
-- **UI Design**: Material 3 + Glassmorphism (GlassKit)
-- **Charts**: FL Chart
-- **State Management**: Provider
-- **Backend (Mock)**: Realistic Data Engine for prototyping
+- **Design**: Material 3 + Custom premium theming
+- **Charts**: `fl_chart` for data visualization
+- **Icons**: FontAwesome & Flutter Standard Icons
+- **Font**: Google Fonts (Poppins & Playfair Display)
 
-## 📸 Screenshots
+## 🚀 Getting Started
 
-| Dashboard | AR Scan | Horse Details |
-|-----------|---------|---------------|
-| ![Dashboard](assets/images/dashboard_preview.png) | ![AR](assets/images/ar_scan_preview.png) | ![Details](assets/images/horse_details_preview.png) |
-
-## 📦 Getting Started
-
-1. **Clone the repository**:
+1. **Clone the repo**
 
     ```bash
-    git clone https://github.com/mizatrix/smart-horse-monitoring-system.git
+    git clone https://github.com/yourusername/equiguard.git
     ```
 
-2. **Install Dependencies**:
+2. **Install dependencies**
 
     ```bash
     flutter pub get
     ```
 
-3. **Run the App**:
+3. **Run the app**
 
     ```bash
     flutter run
     ```
-
----
-*EquiGuard - The Future of Equine Intelligence*
