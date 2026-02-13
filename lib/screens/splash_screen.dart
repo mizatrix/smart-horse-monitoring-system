@@ -55,14 +55,10 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                   color: Colors.white,
                   shape: BoxShape.circle,
                 ),
-                child: SvgPicture.asset(
-                  'assets/icons/icon.svg',
+                child: Image.asset(
+                  'assets/icons/app_icon.png',
                   height: 100,
                   width: 100,
-                  colorFilter: ColorFilter.mode(
-                    Theme.of(context).colorScheme.primary, 
-                    BlendMode.srcIn
-                  ),
                 ),
               ),
             ),

@@ -28,18 +28,18 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             },
             children: const [
               IntroPage(
-                imagePath: 'assets/images/image7.png',
+                imagePath: 'assets/images/onboarding_monitor.png',
                 title: 'Real-time Health Monitoring',
                 description: 'Track your horse\'s vitals 24/7 with precision IoT sensors to ensure peak performance.',
               ),
               IntroPage(
-                imagePath: 'assets/images/image7.png',
+                imagePath: 'assets/images/onboarding_ai.png',
                 title: 'AI-Powered Insights',
                 description: 'Detect early signs of illness and injury with our advanced predictive algorithms.',
               ),
               IntroPage(
-                imagePath: 'assets/images/image19.svg',
-                isSvg: true,
+                imagePath: 'assets/images/onboarding_location.png',
+                isSvg: false,
                 title: 'Stay Connected Anywhere',
                 description: 'Monitor location, activity, and stable conditions from anywhere in the world.',
               ),
