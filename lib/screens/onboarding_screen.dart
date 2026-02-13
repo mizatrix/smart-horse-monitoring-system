@@ -28,7 +28,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             },
             children: const [
               IntroPage(
-                imagePath: 'assets/images/image14.png',
+                imagePath: 'assets/images/image7.png',
                 title: 'Real-time Health Monitoring',
                 description: 'Track your horse\'s vitals 24/7 with precision IoT sensors to ensure peak performance.',
               ),
