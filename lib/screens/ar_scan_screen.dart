@@ -103,7 +103,7 @@ class _ArScanScreenState extends State<ArScanScreen> with SingleTickerProviderSt
                         ),
                         child: Text(
                           'AR VIEW ACTIVE',
-                          style: GoogleFonts.jetbrainsMono(
+                          style: GoogleFonts.robotoMono(
                             color: const Color(0xFFCEB8A4),
                             fontSize: 12,
                             fontWeight: FontWeight.bold,
@@ -183,7 +183,7 @@ class _ArScanScreenState extends State<ArScanScreen> with SingleTickerProviderSt
                   ),
                   Text(
                     'ID: #8392-Alpha',
-                    style: GoogleFonts.jetbrainsMono(color: Colors.grey, fontSize: 12),
+                    style: GoogleFonts.robotoMono(color: Colors.grey, fontSize: 12),
                   ),
                 ],
               ),
