@@ -1,6 +1,6 @@
 # EquiGuard - Smart Horse Health Monitoring System
 
-![EquiGuard Banner](assets/images/image7.png)
+![EquiGuard Banner](assets/images/equiguard_banner.png)
 
 **EquiGuard** is a next-generation equine health monitoring system powered by IoT and Artificial Intelligence. This app allows stable owners and veterinarians to monitor the real-time health, location, and activity of their horses, ensuring early detection of critical conditions like Colic.
 
