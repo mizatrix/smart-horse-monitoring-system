@@ -24,7 +24,7 @@
 
 | Dashboard | AR Scan | Horse Details |
 |-----------|---------|---------------|
-| ![Dashboard](assets/images/image7.png) | ![AR](assets/images/ar_scan_preview.png) | ![Details](assets/images/horse_details_preview.png) |
+| ![Dashboard](assets/images/dashboard_preview.png) | ![AR](assets/images/ar_scan_preview.png) | ![Details](assets/images/horse_details_preview.png) |
 
 ## 📦 Getting Started
 
