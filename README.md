@@ -1,16 +1,57 @@
-# smart_horse
 
-IoT and AI-powered horse health monitoring system
+# EquiGuard - Smart Horse Health Monitoring System
 
-## Getting Started
+![EquiGuard Banner](assets/images/image14.png)
 
-This project is a starting point for a Flutter application.
+**EquiGuard** is a next-generation equine health monitoring system powered by IoT and Artificial Intelligence. This app allows stable owners and veterinarians to monitor the real-time health, location, and activity of their horses, ensuring early detection of critical conditions like Colic.
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Key Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Real-time Vitals**: Monitor Heart Rate, Temperature, and Respiration 24/7.
+- **🔮 AI Health Prediction**: Proprietary algorithms analyze data to predict health risks before they become critical.
+- **🦄 AR Health Scan**: Augmented Reality feature to visualize horse stats in real-time using the camera.
+- **📍 Live Geofencing**: Track horse location and get alerts if they leave safe zones.
+- **📊 24h History**: Detailed interactive charts for deep health analysis.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Technology Stack
+
+- **Framework**: Flutter (Dart)
+- **UI Design**: Material 3 + Glassmorphism (GlassKit)
+- **Charts**: FL Chart
+- **State Management**: Provider
+- **Backend (Mock)**: Realistic Data Engine for prototyping
+
+## 📸 Screenshots
+
+| Dashboard | AR Scan | Horse Details |
+|-----------|---------|---------------|
+| ![Dashboard](assets/images/image7.png) | ![AR](assets/images/image1.png) | ![Details](assets/images/image2.png) |
+
+## 📦 Getting Started
+
+1. **Clone the repository**:
+
+    ```bash
+    git clone https://github.com/your-username/smart-horse-monitoring-system.git
+    ```
+
+2. **Install Dependencies**:
+
+    ```bash
+    flutter pub get
+    ```
+
+3. **Run the App**:
+
+    ```bash
+    flutter run
+    ```
+
+## 👥 Team
+
+- **Dr. Moataz Samy** (Supervisor)
+- **Nouran Ahmed** (AI & Mobile Lead)
+- **Malak Mohamed** (IoT & AI Model Lead)
+
+---
+*Built for the 2026 Graduation Project Showcase.*
