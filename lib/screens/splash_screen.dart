@@ -135,7 +135,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                 children: [
                   const Spacer(flex: 3),
 
-                  // Logo with glow
+                  // Golden horse image with glow
                   FadeTransition(
                     opacity: _logoFade,
                     child: ScaleTransition(
@@ -144,57 +144,22 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                         animation: _shimmerController,
                         builder: (context, child) {
                           return Container(
-                            width: 140,
-                            height: 140,
+                            width: 180,
+                            height: 180,
                             decoration: BoxDecoration(
-                              shape: BoxShape.circle,
                               boxShadow: [
                                 BoxShadow(
                                   color: const Color(0xFFD2B48C).withOpacity(
-                                    0.2 + _shimmerController.value * 0.2,
+                                    0.15 + _shimmerController.value * 0.15,
                                   ),
-                                  blurRadius: 40 + _shimmerController.value * 20,
-                                  spreadRadius: 5 + _shimmerController.value * 10,
-                                ),
-                                BoxShadow(
-                                  color: const Color(0xFF8D6E63).withOpacity(0.1),
-                                  blurRadius: 60,
-                                  spreadRadius: 15,
+                                  blurRadius: 50 + _shimmerController.value * 20,
+                                  spreadRadius: 10 + _shimmerController.value * 10,
                                 ),
                               ],
                             ),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                gradient: LinearGradient(
-                                  begin: Alignment.topLeft,
-                                  end: Alignment.bottomRight,
-                                  colors: [
-                                    const Color(0xFFD2B48C),
-                                    const Color(0xFF8D6E63),
-                                    Color.lerp(
-                                      const Color(0xFF8D6E63),
-                                      const Color(0xFFD2B48C),
-                                      _shimmerController.value,
-                                    )!,
-                                  ],
-                                ),
-                                border: Border.all(
-                                  color: Colors.white.withOpacity(0.2),
-                                  width: 2,
-                                ),
-                              ),
-                              child: ClipOval(
-                                child: Padding(
-                                  padding: const EdgeInsets.all(20),
-                                  child: Image.asset(
-                                    'assets/icons/app_icon.png',
-                                    fit: BoxFit.contain,
-                                    color: Colors.white,
-                                    colorBlendMode: BlendMode.srcIn,
-                                  ),
-                                ),
-                              ),
+                            child: Image.asset(
+                              'assets/icons/app_icon.png',
+                              fit: BoxFit.contain,
                             ),
                           );
                         },
