@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:smart_horse/screens/tabs/home_tab.dart';
 import 'package:smart_horse/screens/tabs/stats_tab.dart';
-import 'package:smart_horse/screens/stable_management_screen.dart';
+import 'package:smart_horse/screens/shop_screen.dart';
 import 'package:smart_horse/screens/settings_screen.dart';
 import '../services/theme_provider.dart';
 import '../services/locale_provider.dart';
@@ -27,7 +27,7 @@ class _DashboardScreenState extends State<DashboardScreen> with SingleTickerProv
     const HomeTab(),
     const StatsTab(),
     const SizedBox(), // Placeholder for center FAB
-    const StableManagementScreen(),
+    const ShopScreen(),
     const SettingsScreen(),
   ];
 
@@ -73,20 +73,13 @@ class _DashboardScreenState extends State<DashboardScreen> with SingleTickerProv
           boxShadow: [
             BoxShadow(
               color: (isDark ? Colors.black : Colors.grey).withOpacity(0.08),
-              blurRadius: 20,
-              offset: const Offset(0, -5),
+              blurRadius: 20, offset: const Offset(0, -5),
             ),
           ],
-          borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(25),
-            topRight: Radius.circular(25),
-          ),
+          borderRadius: const BorderRadius.only(topLeft: Radius.circular(25), topRight: Radius.circular(25)),
         ),
         child: ClipRRect(
-          borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(25),
-            topRight: Radius.circular(25),
-          ),
+          borderRadius: const BorderRadius.only(topLeft: Radius.circular(25), topRight: Radius.circular(25)),
           child: BottomNavigationBar(
             currentIndex: _currentIndex,
             onTap: (index) {
@@ -138,9 +131,9 @@ class _DashboardScreenState extends State<DashboardScreen> with SingleTickerProv
                     color: _currentIndex == 3 ? const Color(0xFFD2B48C).withOpacity(0.15) : Colors.transparent,
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: const Icon(FontAwesomeIcons.shop, size: 18),
+                  child: const Icon(Icons.shopping_bag_outlined, size: 22),
                 ),
-                label: AppStrings.get('stable', lang),
+                label: lang == 'ar' ? 'المتجر' : 'Shop',
               ),
               BottomNavigationBarItem(
                 icon: AnimatedContainer(
@@ -165,21 +158,15 @@ class _DashboardScreenState extends State<DashboardScreen> with SingleTickerProv
             shape: BoxShape.circle,
             gradient: const LinearGradient(
               colors: [Color(0xFFD2B48C), Color(0xFF8D6E63)],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
+              begin: Alignment.topLeft, end: Alignment.bottomRight,
             ),
             boxShadow: [
-              BoxShadow(
-                color: const Color(0xFFD2B48C).withOpacity(0.4),
-                blurRadius: 15,
-                offset: const Offset(0, 6),
-              ),
+              BoxShadow(color: const Color(0xFFD2B48C).withOpacity(0.4), blurRadius: 15, offset: const Offset(0, 6)),
             ],
           ),
           child: FloatingActionButton(
             onPressed: () => Navigator.pushNamed(context, '/ar_scan'),
-            backgroundColor: Colors.transparent,
-            elevation: 0,
+            backgroundColor: Colors.transparent, elevation: 0,
             shape: const CircleBorder(),
             child: const Icon(Icons.qr_code_scanner, color: Colors.white, size: 28),
           ),
